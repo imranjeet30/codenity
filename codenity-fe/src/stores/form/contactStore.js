@@ -68,7 +68,7 @@ export const useContactStore = defineStore('contact', {
         message: ''
       };
       this.errors = {};
-      this.isSuccess = false;
+      this.isSuccess = true;
       this.serverError = null;
     },
     handleError(error) {

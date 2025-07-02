@@ -1,8 +1,8 @@
 <script setup>
-import { onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useContactStore } from '@/stores/form/contactStore';
 import { digitalServices } from '@/constants/categories';
+import Navbar from '@/components/Navbar.vue';
 
 const contactStore = useContactStore();
 const { submitForm, validateForm } = contactStore;
@@ -437,7 +437,7 @@ const handleSubmit = async () => {
                                 </div>
                                 <div class="col-12">
                                     <div v-if="isSuccess" class="alert alert-success mt-3">
-                                        "Thank you for your message!"
+                                        Thank you for your message!
                                     </div>
                                 </div>
                             </div>
